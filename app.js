@@ -4,6 +4,9 @@ var port = process.env.PORT || 3000
 
 var app = express();
  
+const url = 'http://localhost:';
+console.log(`Server is running at ${url}` + port);
+
 app.engine('handlebars', exphbs());
 app.set('view engine', 'handlebars');
 
